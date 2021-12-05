@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:paddingBottom="@dimen/d16p"
+        android:text="@string/movies"
+        android:textColor="@color/black"
+        android:textSize="@dimen/s20p"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="@dimen/d16p"/>
+
+    <include
+        android:id="@+id/recommended"
+        layout="@layout/title_view_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d16p"
+        android:layout_margin="@dimen/d16p"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recommended"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_large"
+        android:layout_margin="@dimen/d16p"/>
+
+    <LinearLayout
+        android:id="@+id/layout_popular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:padding="@dimen/d16p">
+
+        <include
+            android:id="@+id/popular"
+            layout="@layout/title_view_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16p" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_small" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
