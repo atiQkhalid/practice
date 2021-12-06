@@ -1,4 +1,4 @@
-package com.example.practice.views.fragments.countrydetail
+package com.example.practice.views.fragments.countrylistmodule.countrydetail
 
 import androidx.lifecycle.MutableLiveData
 import com.example.practice.base.BaseViewModel

@@ -1,4 +1,4 @@
-package com.example.practice.views.fragments
+package com.example.practice.views.fragments.countrylistmodule
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import com.example.practice.R
 import com.example.practice.base.BaseFragment
 import com.example.practice.databinding.FragmentListBinding
 import com.example.practice.extenssions.replaceFragment
-import com.example.practice.views.fragments.countrylist.CountryListFragment
+import com.example.practice.views.fragments.countrylistmodule.countrylist.CountryListFragment
 
 class ListFragment : BaseFragment(), View.OnClickListener {
     private lateinit var binding: FragmentListBinding

@@ -1,4 +1,4 @@
-package com.example.practice.views.fragments.countrydetail
+package com.example.practice.views.fragments.countrylistmodule.countrydetail
 
 import android.os.Bundle
 import android.view.LayoutInflater

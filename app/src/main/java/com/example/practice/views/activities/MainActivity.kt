@@ -4,8 +4,7 @@ import android.os.Bundle
 import com.example.practice.base.BaseActivity
 import com.example.practice.databinding.ActivityMainBinding
 import com.example.practice.extenssions.replaceFragmentSafely
-import com.example.practice.views.fragments.ListFragment
-import com.example.practice.views.fragments.countrylist.CountryListFragment
+import com.example.practice.views.fragments.countrylistmodule.ListFragment
 
 class MainActivity : BaseActivity() {
 

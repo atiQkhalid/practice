@@ -1,4 +1,4 @@
-package com.example.practice.views.fragments.countrylist
+package com.example.practice.views.fragments.countrylistmodule.countrylist
 
 import android.os.Bundle
 import android.text.Editable
@@ -17,7 +17,7 @@ import com.example.practice.extenssions.replaceFragment
 import com.example.practice.extenssions.showToastMsg
 import com.example.practice.extenssions.visible
 import com.example.practice.utils.Constants.COUNTRY_NAME
-import com.example.practice.views.fragments.countrydetail.CountryDetailFragment
+import com.example.practice.views.fragments.countrylistmodule.countrydetail.CountryDetailFragment
 
 
 class CountryListFragment : BaseFragment(), CountryAdapter.OnCountryItemClickListener,

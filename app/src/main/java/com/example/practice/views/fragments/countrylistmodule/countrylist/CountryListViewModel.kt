@@ -1,4 +1,4 @@
-package com.example.practice.views.fragments.countrylist
+package com.example.practice.views.fragments.countrylistmodule.countrylist
 
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
