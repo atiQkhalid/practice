@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.sampleprojectforrecruitment">
+    package="com.example.practice">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
-        android:name="com.example.sampleprojectforrecruitment.App"
+        android:name="com.example.practice.App"
         android:allowBackup="true"
         android:icon="@drawable/icon_covid"
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_covid"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SampleProjectForRecruitment"
+        android:theme="@style/Theme.practice"
         tools:ignore="AllowBackup">
         <activity
-            android:name="com.example.sampleprojectforrecruitment.views.activities.MainActivity"
-            android:exported="true">
+            android:name="com.example.practice.views.activities.MainActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
