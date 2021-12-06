@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practice.adapter.CountryAdapter
 import com.example.practice.base.BaseFragment
-import com.example.practice.databinding.FragmentHomeBinding
+import com.example.practice.databinding.FragmentCountryListBinding
 import com.example.practice.extenssions.gone
 import com.example.practice.extenssions.replaceFragment
 import com.example.practice.extenssions.showToastMsg
@@ -23,7 +23,7 @@ import com.example.practice.views.fragments.countrydetail.CountryDetailFragment
 class CountryListFragment : BaseFragment(), CountryAdapter.OnCountryItemClickListener,
     CountryListViewModel.View{
 
-    private lateinit var binding: FragmentHomeBinding
+    private lateinit var binding: FragmentCountryListBinding
     private var countryAdapter: CountryAdapter? = null
     private val countryListViewModel: CountryListViewModel by viewModels()
 
@@ -37,13 +37,13 @@ class CountryListFragment : BaseFragment(), CountryAdapter.OnCountryItemClickLis
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding = FragmentCountryListBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        countryAdapter = _root_ide_package_.com.example.practice.adapter.CountryAdapter(this)
+        countryAdapter = CountryAdapter(this)
 
         binding.etSearch.addTextChangedListener(object : TextWatcher {
              override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}
