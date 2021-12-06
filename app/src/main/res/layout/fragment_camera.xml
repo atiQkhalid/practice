@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center_vertical"
-    android:gravity="center_vertical"
-    android:background="@drawable/bg_main">
+    android:gravity="center_vertical">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,24 +18,19 @@
             android:layout_gravity="center_vertical">
 
             <TextView
-                android:id="@+id/tv_recyclerViewSearch"
+                android:id="@+id/tv_takePicture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/recyclerview_with_search"
+                android:text="@string/take_picture"
                 android:gravity="center"
                 android:padding="@dimen/dp10"
-                android:textStyle="bold"
-                android:textColor="@color/white"/>
+                android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/tv_cameraEvents"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/camera_events"
-                android:gravity="center"
-                android:padding="@dimen/dp10"
-                android:textStyle="bold"
-                android:textColor="@color/white"/>
+            <ImageView
+                android:id="@+id/clickedPicture"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:src="@drawable/bg_main"/>
 
         </LinearLayout>
     </ScrollView>

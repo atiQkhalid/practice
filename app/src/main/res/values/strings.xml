@@ -10,4 +10,7 @@
     <string name="critical">Critical</string>
     <string name="recovered">Recovered</string>
     <string name="recyclerview_with_search">Recyclerview with search</string>
+    <string name="broadcast_receiver">Broadcast receiver</string>
+    <string name="camera_events">Camera events</string>
+    <string name="take_picture">Take picture</string>
 </resources>

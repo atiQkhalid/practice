@@ -8,6 +8,7 @@ import com.example.practice.R
 import com.example.practice.base.BaseFragment
 import com.example.practice.databinding.FragmentListBinding
 import com.example.practice.extenssions.replaceFragment
+import com.example.practice.views.fragments.cameramodule.CameraFragment
 import com.example.practice.views.fragments.countrylistmodule.countrylist.CountryListFragment
 
 class ListFragment : BaseFragment(), View.OnClickListener {
@@ -29,11 +30,13 @@ class ListFragment : BaseFragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.tvRecyclerViewSearch.setOnClickListener(this)
+        binding.tvCameraEvents.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.tv_recyclerViewSearch -> replaceFragment(CountryListFragment())
+            R.id.tv_cameraEvents -> replaceFragment(CameraFragment())
         }
     }
 }
