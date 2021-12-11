@@ -8,7 +8,7 @@ import com.kaopiz.kprogresshud.KProgressHUD
 
 abstract class BaseFragment : Fragment() {
 
-    protected lateinit var mainActivity: MainActivity
+    private lateinit var mainActivity: MainActivity
     lateinit var progressDialog: KProgressHUD
 
     override fun onCreate(savedInstanceState: Bundle?) {
