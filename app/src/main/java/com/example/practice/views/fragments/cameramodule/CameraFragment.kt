@@ -67,7 +67,7 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
                 binding.rvClickedPicture.adapter = cameraAdapter
             } else{
                 binding.ivClickedPicture.visible()
-                binding.ivClickedPicture.setImageURI(data?.data as Uri)
+                binding.ivClickedPicture.setImageURI(data.data as Uri)
             }
 
         }
