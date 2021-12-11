@@ -49,7 +49,6 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
         binding.tvSelectPictureFromGallery.setOnClickListener(this)
     }
 
-    @SuppressLint("NotifyDataSetChanged")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
