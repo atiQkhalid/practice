@@ -97,7 +97,6 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.tv_takePicture -> openCamera()
-//            R.id.iv_clickedPicture -> showToastMsg(binding.ivClickedPicture.drawable.toString())
             R.id.tv_SelectPictureFromGallery -> openGallery()
         }
     }
