@@ -56,16 +56,16 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
             binding.ivClickedPicture.setImageBitmap(imageBitmap)
         } else if (resultCode == RESULT_OK && requestCode == SELECT_PICTURE) {
             if (data?.data == null) {
+                uri.clear()
                 binding.ivClickedPicture.gone()
                 binding.rvClickedPicture.visible()
-                uri.clear()
+                cameraAdapter = CameraAdapter(uri)
+                binding.rvClickedPicture.adapter = cameraAdapter
                 cameraAdapter.notifyDataSetChanged()
                 val count: Int = data?.clipData!!.itemCount
                 for (i in 0 until count) {
                     uri.add(data.clipData!!.getItemAt(i).uri)
                 }
-                cameraAdapter = CameraAdapter(uri)
-                binding.rvClickedPicture.adapter = cameraAdapter
             } else{
                 binding.ivClickedPicture.visible()
                 binding.rvClickedPicture.gone()
