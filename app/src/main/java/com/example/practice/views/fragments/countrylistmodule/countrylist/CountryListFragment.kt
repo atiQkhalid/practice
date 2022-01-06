@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.RecyclerView
-import com.example.practice.adapter.CountryAdapter
+import com.example.practice.adapter.countrylistmodule.CountryAdapter
 import com.example.practice.base.BaseFragment
 import com.example.practice.databinding.FragmentCountryListBinding
 import com.example.practice.extenssions.gone

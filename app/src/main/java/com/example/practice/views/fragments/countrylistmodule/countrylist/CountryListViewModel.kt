@@ -4,7 +4,7 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import com.example.practice.base.BaseViewModel
-import com.example.practice.models.response.CountryResponse
+import com.example.practice.models.response.country.CountryResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

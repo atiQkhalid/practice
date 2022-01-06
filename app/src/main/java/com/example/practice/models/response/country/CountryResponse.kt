@@ -1,4 +1,4 @@
-package com.example.practice.models.response
+package com.example.practice.models.response.country
 
 data class CountryResponse(
     val errors: List<String>,

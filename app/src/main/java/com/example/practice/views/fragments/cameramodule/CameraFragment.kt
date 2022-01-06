@@ -1,7 +1,6 @@
 package com.example.practice.views.fragments.cameramodule
 
 import android.Manifest
-import android.annotation.SuppressLint
 import android.app.Activity.RESULT_OK
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -111,6 +110,7 @@ class CameraFragment : BaseFragment(), View.OnClickListener {
         }
     }
 
+//    request permission
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
