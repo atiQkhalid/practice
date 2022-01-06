@@ -21,7 +21,7 @@ import com.example.practice.databinding.FragmentCameraBinding
 import com.example.practice.extenssions.gone
 import com.example.practice.extenssions.showToastMsg
 import com.example.practice.extenssions.visible
-import com.example.practice.views.fragments.cameramodule.adapter.CameraAdapter
+import com.example.practice.adapter.cameramodule.CameraAdapter
 
 
 class CameraFragment : BaseFragment(), View.OnClickListener {

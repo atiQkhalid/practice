@@ -1,4 +1,4 @@
-package com.example.practice.views.fragments.cameramodule.adapter
+package com.example.practice.adapter.cameramodule
 
 import android.net.Uri
 import android.view.LayoutInflater
